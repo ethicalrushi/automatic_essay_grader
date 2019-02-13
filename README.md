@@ -14,7 +14,7 @@ iii) Relevance with the prompt(relevance_quesn)<br>
 iv) Number of words used(word_count)<br>
 v) Number of distinct words used(distinct_word_count)<br>
 vi) Number of sentences (sentence_count)<br>
-vii) Average word sixe (avg_word_length)<br>
+vii) Average word size (avg_word_length)<br>
 viii) Essay set(essay_set)
 <br>
 (Note: Grammatical mistakes and spelling mistakes are ignored since they were not considered while grading as mentioned in the scoring docs).
@@ -23,8 +23,8 @@ Following graph shows the kappa score on essay set1 for dfferent featuresets.</b
 ![Alt text](https://github.com/ethicalrushi/automatic_essay_grader/blob/master/featureset_set1.png)
 
 featureset1: tfidf with unigrams, relevance, relevance_quesn, essay_set<br>
-featureset2: relevance, relevance_quesn, word_count, distinct_word_count,essay_set, sentence_count, avg_word_count<br>
-featureset3: relevance, relevance_quesn, word_count, distinct_word_count,essay_set, sentence_count,                   avg_word_count(considering 1,2,3,4 grams)<br>
+featureset2: relevance, relevance_quesn, word_count, distinct_word_count,essay_set, sentence_count, avg_word_length<br>
+featureset3: relevance, relevance_quesn, word_count, distinct_word_count,essay_set, sentence_count,                   avg_word_length(considering 1,2,3,4 grams)<br>
 
 Thus featureset3 looks most promising and is used for all the models.<br>
 
@@ -50,7 +50,8 @@ And this is the score variation on setA(i,e essay set 1,3,4,5,6,7,8)
 
 Owing to the scores in above graph <b>SVC is used as the final model for set A.<b>
 
-<b>(b) For set B:</b>
+<b>(b) For set B: 
+</b>
 Models evaluated- Linear regression, SVR
 <br>
 Following graph shows the kappa scores for domain 1 of various models trained and tested on essay set B<br>
@@ -67,10 +68,12 @@ Owing to the results above <b>SVR was used as the final model for set B.</b>
 <b>Final scores on overall validation data:</b><br>
 ![Alt text](https://github.com/ethicalrushi/automatic_essay_grader/blob/master/final_score.png)
 
-Final kappa score on validation data :0.9853 
+<b>Final kappa score on validation data :0.9853 
+ </b>
 (Note: All the scores are calculated on the validation data since true labels of test data were not available)
 
- Notes:(for extending the model to grade essays written by more matured writers)<br>
+ <b>Notes:(for extending the model to grade essays written by more matured writers)
+ </b><br>
 i) Features like visual nature( can be calculated using British Natural Corpus), beautiful words(using Cornell Math Cryptography) and emotive_effectiveness(using MPQA) can be used to score essays written by more matured writers(for e.g. Pulitzer prize essays). Since the essays are written by school kids of grade 8,9,10th on a very short notice these features are not that considerable.<br>
 Reference:https://nlp.stanford.edu/courses/cs224n/2013/reports/song.pdf <br>
 ii) Spelling errors can be calculated using English words from Python’s NLTK
