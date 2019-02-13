@@ -32,7 +32,7 @@ The data is divided into two sets viz. set a and set b.<br>
 Set a contains essaysets 1,3,4,5,6,7,8 and Set b contains essay set 2.<br>
 This division is made since the essays in set 2 have 2 predictions to be made i.e domain1 and domain2 scores.<br>
 
-<b>Following graph shows the feature importance of features as evaluated on Set a<b><br>
+<b>Following graph shows the feature importance of features as evaluated on Set a</b><br>
 
 ![Alt text](https://github.com/ethicalrushi/automatic_essay_grader/blob/master/feature_importance.png)
 
