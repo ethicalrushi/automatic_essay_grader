@@ -50,8 +50,9 @@ And this is the score variation on setA(i,e essay set 1,3,4,5,6,7,8)
 
 Owing to the scores in above graph <b>SVC is used as the final model for set A.<b>
 
-<b>(b) For set B: 
+<b>(b) For set B: </b>
 </b>
+
 Models evaluated- Linear regression, SVR
 <br>
 Following graph shows the kappa scores for domain 1 of various models trained and tested on essay set B<br>
