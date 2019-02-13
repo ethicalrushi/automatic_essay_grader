@@ -67,10 +67,10 @@ Owing to the results above <b>SVR was used as the final model for set B.</b>
 <b>Final scores on overall validation data:</b><br>
 ![Alt text](https://github.com/ethicalrushi/automatic_essay_grader/blob/master/final_score.png)
 
-<b>Final kappa score on validation data</b>:0.9853
+<b>Final kappa score on validation data :0.9853 </b>
 (Note: All the scores are calculated on the validation data since true labels of test data were not available)
 
-<b>Notes:</b>(for extending the model to grade essays written by more matured writers)<br>
+<b> Notes:</b>(for extending the model to grade essays written by more matured writers)<br>
 i) Features like visual nature( can be calculated using British Natural Corpus), beautiful words(using Cornell Math Cryptography) and emotive_effectiveness(using MPQA) can be used to score essays written by more matured writers(for e.g. Pulitzer prize essays). Since the essays are written by school kids of grade 8,9,10th on a very short notice these features are not that considerable.<br>
 Reference:https://nlp.stanford.edu/courses/cs224n/2013/reports/song.pdf <br>
 ii) Spelling errors can be calculated using English words from Python’s NLTK
