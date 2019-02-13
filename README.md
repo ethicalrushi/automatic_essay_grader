@@ -67,7 +67,7 @@ Owing to the results above <b>SVR was used as the final model for set B.</b>
 <b>Final scores on overall validation data:</b><br>
 ![Alt text](https://github.com/ethicalrushi/automatic_essay_grader/blob/master/final_score.png)
 
-<b>Final kappa score on validation data :0.9853 </b>
+Final kappa score on validation data :0.9853 
 (Note: All the scores are calculated on the validation data since true labels of test data were not available)
 
  Notes:(for extending the model to grade essays written by more matured writers)<br>
