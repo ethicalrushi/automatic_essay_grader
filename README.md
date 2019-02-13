@@ -19,7 +19,7 @@ viii) Essay set(essay_set)
 <br>
 (Note: Grammatical mistakes and spelling mistakes are ignored since they were not considered while grading as mentioned in the scoring docs).
 <br><br><b>
-Following graph shows the kappa score on essay set1 for dfferent featuresets.
+Following graph shows the kappa score on essay set1 for dfferent featuresets.</b>
 ![Alt text](https://github.com/ethicalrushi/automatic_essay_grader/blob/master/featureset_set1.png)
 
 featureset1: tfidf with unigrams, relevance, relevance_quesn, essay_set<br>
